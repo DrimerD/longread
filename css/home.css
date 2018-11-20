@@ -1,0 +1,276 @@
+/*fonts*/
+@font-face {
+    font-family: Georgia;
+    src: url("../fonts/georgia.ttf");
+}
+@font-face {
+    font-family: ProNarrow;
+    src: url("../fonts/PT Serif Pro Narrow.otf");
+}
+@font-face {
+    font-family: ProNarrowBold;
+    src: url("../fonts/PT Serif Pro Narrow Bold.otf");
+}
+@font-face {
+    font-family: Roboto;
+    src: url("../fonts/Roboto.ttf");
+}
+/*end fonts*/
+body {
+    background-color: #282828;
+}
+/*main block*/
+#main-image {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background: #282828 url("../image/olga_hust_bg.jpg") center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#main-image .mask {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+#main-image .container {
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+}
+#main-image .info {
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 10%;
+    width: 100%;
+}
+#main-image h1 {
+    font-family: Roboto, "Times New Roman";
+    text-transform: capitalize;
+    font-size: 24px;
+    line-height: 1.566;
+}
+#main-image h2 {
+    font-family: ProNarrowBold, "Times New Roman";
+    font-size: 55px;
+    font-weight: bold;
+    line-height: 1.667;
+}
+#main-image p {
+    font-family: ProNarrow, "Times New Roman";
+    font-size: 18px;
+    font-weight: 600;
+    margin: 20px 0px;
+}
+#main-image .main-soc img {
+    width: 30px;
+    height: 30px;
+}
+#main-image .main-soc a {
+    margin: 0px 5px;
+}
+#main-image .main-soc {
+    display: inline;
+    border-top: 1px solid #fff;
+    padding-top: 15px;
+}
+/*first section*/
+#first-section {
+    padding: 60px 0px;
+    background: #ffffff url("../image/first-section/woman_and_bike.png") center center no-repeat;
+    background-position-x: 95%;
+    background-position-y: 80%;
+}
+
+#first-section p {
+    font-size: 20px;
+    font-family: ProNarrowBold, "Times New Roman";
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    line-height: 1.75;
+    text-align: justify;
+    margin-bottom: 0px;
+}
+#first-section .soc-block {
+    font-size: 18px;
+    font-family: ProNarrow, "Times New Roman";
+    color: rgb(35, 35, 35);
+    line-height: 1.667;
+}
+
+#first-section .soc-ico a {
+    margin: 0px 5px;
+}
+#first-section .soc-ico a:first-child {
+    margin-left: 0px;
+}
+#first-section .soc-ico a:last-child {
+    margin-right: 0px;
+}
+#first-section .soc-ico img {
+    width: 30px;
+    height: 30px;
+}
+.divider-section {
+    background-color: rgb(40, 40, 40);
+    height: 50px;
+}
+/*second section*/
+#second-section {
+    padding: 60px 0px;
+    background: #ffffff url("../image/second-section/section-two-bg.png") right bottom no-repeat;
+    background-position-x: 130%;
+    background-position-y: 75%;
+    color: rgb(0, 0, 0);
+}
+.text-divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0px;
+}
+.text-divider i {
+    font-size: 8px;
+    color: #96989c;
+}
+.text-divider:after,
+.text-divider:before {
+    content: " ";
+    height: 2px;
+    width: 40px;
+    background-color: #96989c;
+    display: block;
+    margin: 0px 10px;
+}
+h3 {
+    font-size: 24px;
+    font-family: ProNarrow, "Times New Roman";
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+#second-section p {
+    font-family: Roboto, "Times New Roman";
+    text-align: justify;
+}
+#second-section .welcome-to .img-welcome-container {
+    margin-left: -8%;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    float: left;
+    position: relative;
+}
+#second-section .welcome-to img {
+    width: 100%;
+    max-width: 520px;
+}
+#second-section .welcome-to p {
+    margin-bottom: 0px;
+}
+#second-section .welcome-to .img-welcome-container .arrow {
+    max-width: 60px;
+    max-height: 120px;
+    position: absolute;
+}
+/*image block*/
+.image-section {
+    background-color: #ffffff;
+}
+.image-section .image-fone {
+    height: 500px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+}
+.image-section .image-fone p {
+    color: #ffffff;
+    margin-right: 2em;
+    font-size: 18px;
+    font-family: ProNarrow, "Times New Roman";
+    line-height: 1.667;
+}
+.image-section .notes-block .col-10 {
+    display: flex;
+}
+.image-section .notes-block p {
+    font-family: ProNarrowBold, "Times New Roman";
+    font-size: 24px;
+    color: rgb(96, 96, 96);
+    font-weight: bold;
+    width: 86%;
+    text-align: justify;
+}
+.image-section .arrow-img {
+    width: 14%;
+}
+/*image section 1,2,3,4*/
+#image-section-1 .image-fone {
+    background: #ffffff url("../image/third-section/egorova-section-tree.jpg") center center no-repeat;
+}
+#image-section-2 .image-fone {
+    background: #ffffff url("../image/four-section/galyna-shirnik.jpg") center center no-repeat;
+}
+/*third section*/
+#third-section {
+    padding: 60px 0px;
+    background: #ffffff url("../image/third-section/section-three-bg.png") left bottom no-repeat;
+    background-position-x: 0%;
+    background-position-y: 93%;
+    color: rgb(0, 0, 0);
+}
+strong {
+    font-family: ProNarrowBold, "Times New Roman";
+}
+
+#third-section p {
+    font-family: Roboto, "Times New Roman";
+    text-align: justify;
+}
+#third-section .welcome-to .img-welcome-container {
+    margin-right: -8%;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    float: right;
+    position: relative;
+}
+#third-section .welcome-to img {
+    width: 100%;
+    max-width: 520px;
+}
+#third-section .welcome-to p {
+    margin-bottom: 0px;
+}
+#third-section .welcome-to .img-welcome-container .arrow {
+    max-width: 60px;
+    max-height: 120px;
+    position: absolute;
+    right: 3%;
+    top: 92%;
+}
+#third-section .row {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+/*about-money*/
+#about-money {
+    padding: 60px 0px;
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+}
+#about-money p {
+    font-family: Roboto, "Times New Roman";
+    text-align: justify;
+}
+#about-money .row {
+    margin-bottom: 15px;
+}
+#about-money .row:last-child {
+    margin-bottom: 0px;
+}

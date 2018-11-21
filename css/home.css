@@ -1,27 +1,35 @@
 /*fonts*/
 @font-face {
     font-family: Georgia;
-    src: url("../fonts/georgia.ttf");
+    src: url("../fonts/georgia.ttf") format("ttf"),
+    url("../fonts/georgia.woff") format("woff");
 }
 @font-face {
     font-family: ProNarrow;
-    src: url("../fonts/PT Serif Pro Narrow.otf");
+    src: url("../fonts/PT Serif Pro Narrow.otf") format("otf"),
+    url("../fonts/PT Serif Pro Narrow.ttf") format("ttf"),
+    url("../fonts/PT Serif Pro Narrow.woff") format("woff");
 }
 @font-face {
     font-family: ProNarrowBold;
-    src: url("../fonts/PT Serif Pro Narrow Bold.otf");
+    src: url("../fonts/PT Serif Pro Narrow Bold.otf") format("otf"),
+    url("../fonts/PT Serif Pro Narrow Bold.ttf") format("ttf"),
+    url("../fonts/PT Serif Pro Narrow Bold.woff") format("woff");
 }
 @font-face {
     font-family: ProNarrowItalic;
-    src: url("../fonts/PT Serif Pro Narrow Italic.ttf");
+    src: url("../fonts/PT Serif Pro Narrow Italic.ttf") format("ttf"),
+    url("../fonts/PT Serif Pro Narrow Italic.woff") format("woff");
 }
 @font-face {
     font-family: Roboto;
-    src: url("../fonts/Roboto.ttf");
+    src: url("../fonts/Roboto.ttf") format("ttf"),
+    url("../fonts/Roboto.woff") format("woff");
 }
 @font-face {
     font-family: RobotoBold;
-    src: url("../fonts/Robotobold.ttf");
+    src: url("../fonts/Robotobold.ttf") format("ttf"),
+    url("../fonts/Robotobold.woff") format("woff");
 }
 /*end fonts*/
 body {

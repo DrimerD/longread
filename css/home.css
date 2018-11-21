@@ -12,8 +12,16 @@
     src: url("../fonts/PT Serif Pro Narrow Bold.otf");
 }
 @font-face {
+    font-family: ProNarrowItalic;
+    src: url("../fonts/PT Serif Pro Narrow Italic.ttf");
+}
+@font-face {
     font-family: Roboto;
     src: url("../fonts/Roboto.ttf");
+}
+@font-face {
+    font-family: RobotoBold;
+    src: url("../fonts/Robotobold.ttf");
 }
 /*end fonts*/
 body {
@@ -97,23 +105,23 @@ body {
     text-align: justify;
     margin-bottom: 0px;
 }
-#first-section .soc-block {
+.soc-block {
     font-size: 18px;
     font-family: ProNarrow, "Times New Roman";
     color: rgb(35, 35, 35);
     line-height: 1.667;
 }
 
-#first-section .soc-ico a {
+.soc-ico a {
     margin: 0px 5px;
 }
-#first-section .soc-ico a:first-child {
+.soc-ico a:first-child {
     margin-left: 0px;
 }
-#first-section .soc-ico a:last-child {
+.soc-ico a:last-child {
     margin-right: 0px;
 }
-#first-section .soc-ico img {
+.soc-ico img {
     width: 30px;
     height: 30px;
 }
@@ -153,7 +161,11 @@ h3 {
     font-family: ProNarrow, "Times New Roman";
     text-transform: uppercase;
     font-weight: bold;
+    letter-spacing: 2px;
     margin-bottom: 0px;
+}
+#about-hobie h3 {
+    font-size: 36px;
 }
 #second-section p {
     font-family: Roboto, "Times New Roman";
@@ -198,7 +210,7 @@ h3 {
     font-family: ProNarrow, "Times New Roman";
     line-height: 1.667;
 }
-.image-section .notes-block .col-10 {
+.image-section .notes-block .col-lg-10 {
     display: flex;
 }
 .image-section .notes-block p {
@@ -219,6 +231,12 @@ h3 {
 #image-section-2 .image-fone {
     background: #ffffff url("../image/four-section/galyna-shirnik.jpg") center center no-repeat;
 }
+#image-section-3 .image-fone {
+    background: #ffffff url("../image/five-section/bg-five.jpg") center center no-repeat;
+}
+#image-section-4 .image-fone {
+    background: #ffffff url("../image/six-section/image-section.jpg") center center no-repeat;
+}
 /*third section*/
 #third-section {
     padding: 60px 0px;
@@ -228,7 +246,7 @@ h3 {
     color: rgb(0, 0, 0);
 }
 strong {
-    font-family: ProNarrowBold, "Times New Roman";
+    font-family: RobotoBold, "Times New Roman";
 }
 
 #third-section p {
@@ -260,19 +278,468 @@ strong {
     margin-top: 15px;
     margin-bottom: 15px;
 }
-/*about-money*/
-#about-money {
+/*about-money, about-home*/
+#about-money,
+#about-home,
+#about-hobie {
     padding: 60px 0px;
     background-color: #fff;
     color: rgb(0, 0, 0);
 }
-#about-money p {
+#about-home {
+    background: #ffffff url(../image/six-section/about-home-bg.png) left bottom no-repeat;
+}
+#about-money p,
+#about-home p,
+#about-hobie p {
     font-family: Roboto, "Times New Roman";
     text-align: justify;
 }
-#about-money .row {
+#about-hobie .georgia-font p {
+    font-family: Georgia, "Times New Roman";
+}
+#about-money .row,
+#about-home .row,
+#about-hobie .row {
     margin-bottom: 15px;
 }
-#about-money .row:last-child {
+#about-money .row:last-child,
+#about-home .row:last-child,
+#about-hobie .row:last-child {
     margin-bottom: 0px;
+}
+/*four section*/
+#four-section {
+    padding: 60px 0px;
+    background: #ffffff url(../image/four-section/four-section-bg.png) left bottom no-repeat;
+    background-position-x: 100%;
+    background-position-y: 93%;
+    color: rgb(0, 0, 0);
+}
+#four-section .row {
+    margin-bottom: 30px;
+}
+#four-section .welcome-to .img-welcome-container {
+    margin-left: -8%;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    float: left;
+    position: relative;
+}
+#four-section .welcome-to img {
+    width: 100%;
+    max-width: 520px;
+}
+#four-section .welcome-to .img-welcome-container .arrow {
+    max-width: 90px;
+    max-height: 120px;
+    position: absolute;
+    top: -17px;
+    right: -30px;
+}
+#four-section p {
+    font-family: Roboto, "Times New Roman";
+    text-align: justify;
+    margin-bottom: 0px;
+}
+/*five section*/
+#five-section {
+    padding: 60px 0px;
+    background: #ffffff url(../image/five-section/bg-five.png) left bottom no-repeat;
+    background-position-x: 50%;
+    background-position-y: 97%;
+    color: rgb(0, 0, 0);
+}
+#five-section .row {
+    margin-bottom: 30px;
+}
+#five-section .welcome-to .img-welcome-container {
+    margin-left: -8%;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    float: left;
+    position: relative;
+}
+#five-section .welcome-to img {
+    width: 100%;
+    max-width: 520px;
+}
+#five-section .welcome-to .img-welcome-container .arrow {
+    max-width: 90px;
+    max-height: 120px;
+    position: absolute;
+    top: -17px;
+    right: -30px;
+}
+#five-section .welcome-to .img-welcome-container-2 {
+    margin-right: -8%;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    float: right;
+    position: relative;
+}
+#five-section .welcome-to .img-welcome-container-2 .arrow {
+    max-width: 100px;
+    max-height: 120px;
+    position: absolute;
+    top: 39%;
+    left: -110px;
+}
+#five-section p {
+    font-family: Roboto, "Times New Roman";
+    text-align: justify;
+    margin-bottom: 0px;
+}
+/*six section*/
+#six-section {
+    padding: 60px 0px;
+    background: #ffffff url(../image/six-section/bg.png) left bottom no-repeat;
+    background-position-x: 50%;
+    background-position-y: 97%;
+    color: rgb(0, 0, 0);
+}
+#six-section .row {
+    margin-bottom: 30px;
+}
+#six-section .welcome-to .img-welcome-container {
+    margin-left: -8%;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    float: left;
+    position: relative;
+}
+#six-section .welcome-to img {
+    width: 100%;
+    max-width: 520px;
+}
+#six-section .welcome-to .img-welcome-container .arrow {
+    max-width: 90px;
+    max-height: 120px;
+    position: absolute;
+    top: -17px;
+    right: -30px;
+}
+#six-section .welcome-to .img-welcome-container-2 {
+    margin-right: -8%;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    float: right;
+    position: relative;
+}
+#six-section .welcome-to .img-welcome-container-2 .arrow {
+    max-width: 100px;
+    max-height: 120px;
+    position: absolute;
+    top: -5%;
+    left: -25px;
+}
+#six-section p {
+    font-family: Roboto, "Times New Roman";
+    text-align: justify;
+    margin-bottom: 0px;
+}
+/*seven section*/
+#seven-section {
+    padding: 60px 0px;
+    background: #ffffff url(../image/seven-section/bg.png) top center no-repeat;
+    background-position-x: 50%;
+    background-position-y: 97%;
+    color: rgb(0, 0, 0);
+}
+#seven-section .row {
+    margin-bottom: 30px;
+}
+#seven-section .welcome-to .img-welcome-container {
+    margin-left: -8%;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    float: left;
+    position: relative;
+}
+#seven-section .welcome-to img {
+    width: 100%;
+    max-width: 520px;
+}
+#seven-section .welcome-to .img-welcome-container .arrow {
+    max-width: 90px;
+    max-height: 120px;
+    position: absolute;
+    top: -17px;
+    right: -30px;
+}
+#seven-section .welcome-to .img-welcome-container-2 {
+    margin-right: -8%;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    float: right;
+    position: relative;
+}
+#seven-section .welcome-to .img-welcome-container-2 .arrow {
+    max-width: 100px;
+    max-height: 120px;
+    position: absolute;
+    top: 47%;
+    left: -110px;
+}
+#seven-section p {
+    font-family: Roboto, "Times New Roman";
+    text-align: justify;
+    margin-bottom: 0px;
+}
+#about-hobie .font-italic p {
+    font-family: ProNarrowItalic, "Times New Roman";
+    font-size: 20px;
+}
+#about-hobie .font-italic img {
+    display: block;
+    margin: 30px auto 0;
+}
+/*slider footer*/
+#slider-footer {
+    padding: 60px 0px;
+    background-color: #363636;
+    color: #fff;
+}
+#slider-footer .thumbnail {
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background-color: #fff;
+    overflow: hidden;
+    width: 130px;
+    height: 130px;
+    margin-bottom: 10px;
+}
+#slider-footer h4 {
+    font-family: ProNarrowBold, "Times New Roman";
+    font-size: 24px;
+    text-transform: uppercase;
+}
+#slider-footer .slider-nav p {
+    font-family: Georgia, "Times New Roman";
+    margin-bottom: 3px;
+}
+#slider-footer .slider-nav p a {
+    color: #fff;
+}
+#slider-footer .slider-for p {
+    font-family: Georgia, "Times New Roman";
+    text-align: justify;
+}
+#slider-footer button {
+    background: transparent;
+    border: 0px;
+    color: #fff;
+    font-size: 50px;
+    position: absolute;
+    top: 10%;
+    z-index: 10;
+}
+#slider-footer button:focus {
+    outline: none;
+}
+#slider-footer button.prev {
+    left: -55px;
+}
+#slider-footer button.next {
+    left: 150px;
+}
+
+/*responsive*/
+@media screen and (max-width: 1199px) {
+    #first-section {
+        background-position-x: 98%;
+    }
+    #five-section .welcome-to .img-welcome-container-2 .arrow {
+        top: 60%;
+    }
+    #seven-section .welcome-to .img-welcome-container-2 .arrow {
+        top: 70%;
+    }
+}
+@media screen and (max-width: 991px) {
+    #first-section,
+    #second-section,
+    #third-section,
+    #about-money,
+    #four-section,
+    #five-section,
+    #six-section,
+    #about-home,
+    #seven-section,
+    #about-hobie,
+    #slider-footer {
+        padding: 50px 15px;
+    }
+    .hidden-md-down {
+        display: none;
+    }
+    #second-section .welcome-to img,
+    #third-section .welcome-to img,
+    #four-section .welcome-to img,
+    #five-section .welcome-to img,
+    #five-section .welcome-to img,
+    #six-section .welcome-to img,
+    #six-section .welcome-to img,
+    #seven-section .welcome-to img,
+    #seven-section .welcome-to img,
+    #seven-section .welcome-to img {
+        max-width: 350px;
+    }
+    #second-section .welcome-to .img-welcome-container .arrow,
+    #third-section .welcome-to .img-welcome-container .arrow,
+    #four-section .welcome-to .img-welcome-container .arrow,
+    #five-section .welcome-to .img-welcome-container .arrow,
+    #five-section .welcome-to .img-welcome-container-2 .arrow,
+    #six-section .welcome-to .img-welcome-container .arrow,
+    #six-section .welcome-to .img-welcome-container-2 .arrow,
+    #seven-section .welcome-to .img-welcome-container .arrow,
+    #seven-section .welcome-to .img-welcome-container-2 .arrow {
+        display: none;
+    }
+    #second-section .welcome-to .img-welcome-container,
+    #four-section .welcome-to .img-welcome-container,
+    #five-section .welcome-to .img-welcome-container,
+    #six-section .welcome-to .img-welcome-container,
+    #seven-section .welcome-to .img-welcome-container {
+        margin-left: 0px;
+        margin-bottom: 5px;
+    }
+    #five-section .welcome-to .img-welcome-container-2,
+    #six-section .welcome-to .img-welcome-container-2,
+    #seven-section .welcome-to .img-welcome-container-2,
+    #third-section .welcome-to .img-welcome-container {
+        margin-right: 0px;
+        margin-bottom: 5px;
+    }
+    .image-section .image-fone {
+        height: 350px;
+    }
+    .image-section .notes-block {
+        padding: 0px 15px;
+    }
+    .image-section .notes-block p {
+        font-size: 20px;
+        width: 84%;
+    }
+    .image-section .arrow-img {
+        width: 16%;
+    }
+}
+@media screen and (max-width: 767px) {
+    #first-section,
+    #second-section,
+    #third-section,
+    #about-money,
+    #four-section,
+    #five-section,
+    #six-section,
+    #about-home,
+    #seven-section,
+    #about-hobie,
+    #slider-footer {
+        padding: 30px 15px;
+    }
+    #first-section p {
+        font-size: 16px;
+    }
+    #second-section .welcome-to img,
+    #third-section .welcome-to img,
+    #four-section .welcome-to img,
+    #five-section .welcome-to img,
+    #five-section .welcome-to img,
+    #six-section .welcome-to img,
+    #six-section .welcome-to img,
+    #seven-section .welcome-to img,
+    #seven-section .welcome-to img,
+    #seven-section .welcome-to img {
+        max-width: 100%;
+    }
+    #second-section .welcome-to .img-welcome-container,
+    #third-section .welcome-to .img-welcome-container,
+    #four-section .welcome-to .img-welcome-container,
+    #five-section .welcome-to .img-welcome-container,
+    #five-section .welcome-to .img-welcome-container-2,
+    #six-section .welcome-to .img-welcome-container,
+    #six-section .welcome-to .img-welcome-container-2,
+    #seven-section .welcome-to .img-welcome-container,
+    #seven-section .welcome-to .img-welcome-container-2 {
+        margin: 0 0 5px 0;
+    }
+    .image-section .image-fone {
+        height: 300px;
+    }
+    .image-section .notes-block p {
+        font-size: 18px;
+        width: 84%;
+    }
+    .image-section .arrow-img {
+        width: 16%;
+    }
+    .image-section .arrow-img img {
+        width: 100%;
+    }
+    #slider-footer .single {
+        display: flex!important;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    #slider-footer button.next {
+        left: 70%;
+    }
+    #slider-footer button.prev {
+        left: 22%;
+    }
+}
+@media screen and (max-width: 576px) {
+    #main-image h2 {
+        font-size: 34px;
+    }
+    #main-image img {
+        width: 100%;
+        max-width: 320px;
+    }
+    h3 {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+    .image-section .notes-block .col-lg-10 {
+        display: block;
+    }
+    .image-section .arrow-img {
+        float: left;
+    }
+    .image-section .notes-block p {
+        font-size: 16px;
+        width: 100%;
+    }
+    #about-money .row, #about-home .row, #about-hobie .row {
+        margin-bottom: 5px;
+    }
+    #five-section .row,
+    #six-section .row,
+    #seven-section .row {
+        margin-bottom: 15px;
+    }
+    #about-hobie h3 {
+        font-size: 21px;
+    }
+    #about-hobie h3 {
+        font-size: 18px;
+    }
+    #slider-footer button.prev {
+        left: 0%;
+    }
+    #slider-footer button.next {
+        left: 92%;
+    }
+    #slider-footer .slider-for p {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 375px) {
+    #slider-footer button.prev {
+        left: -2%;
+    }
 }
